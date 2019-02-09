@@ -12,8 +12,9 @@ def format(data, type):
             for i in range(len(fields)):
                 details[fields[i]] = data[i]
         elif type == 'train':
-            details['Source'] = data[0]
-            details['Destination'] = data[1]
+            details['Name'] = data[0]
+            details['Source'] = data[1]
+            details['Destination'] = data[2]
     except:
         details = {"ERROR":"Unable to retrive details, please check the detail provided "}
 
