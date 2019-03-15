@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from api.views import PnrView, TrainView
 
+# These URLs serve as endpoint for the API
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('pnr/', PnrView.as_view()),
