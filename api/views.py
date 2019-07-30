@@ -4,6 +4,9 @@ from rest_framework.response import Response
 from . import services
 
 from .models import TrainDetails
+def index(request):
+    return render(request, 'api/index.html')
+
 def format(data, type):
     fields = ['PNR', 'Status', 'TrainDetails', 'Boarding', 'Destination', 'Date', 'CoachType']
     details = {}
