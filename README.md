@@ -1,5 +1,6 @@
 # RailAPI
 
+Live : https://sri-railapi.herokuapp.com/
 This uses django rest framework to create endpoints for train details and pnr no .
 
 # Usage
